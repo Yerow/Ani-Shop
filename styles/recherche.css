@@ -1,0 +1,127 @@
+/*
+ /$$   /$$                           /$$                    
+| $$  | $$                          | $$                    
+| $$  | $$  /$$$$$$   /$$$$$$   /$$$$$$$  /$$$$$$   /$$$$$$ 
+| $$$$$$$$ /$$__  $$ |____  $$ /$$__  $$ /$$__  $$ /$$__  $$
+| $$__  $$| $$$$$$$$  /$$$$$$$| $$  | $$| $$$$$$$$| $$  \__/
+| $$  | $$| $$_____/ /$$__  $$| $$  | $$| $$_____/| $$      
+| $$  | $$|  $$$$$$$|  $$$$$$$|  $$$$$$$|  $$$$$$$| $$      
+|__/  |__/ \_______/ \_______/ \_______/ \_______/|__/      
+*/
+
+header {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header input{
+    height: 15px;
+    align-items: center;
+    
+}
+
+header img {
+    width: 50px;
+}
+
+header > div{
+    display: flex;
+    align-items: center;
+}
+
+img#loupe{
+    width: 20px;
+}
+
+img#loupe:hover{
+    cursor: pointer;
+}
+
+header >div img:last-child{
+    width: 50px;
+}
+
+/*
+ /$$$$$$$                  /$$          
+| $$__  $$                | $$          
+| $$  \ $$  /$$$$$$   /$$$$$$$ /$$   /$$
+| $$$$$$$  /$$__  $$ /$$__  $$| $$  | $$
+| $$__  $$| $$  \ $$| $$  | $$| $$  | $$
+| $$  \ $$| $$  | $$| $$  | $$| $$  | $$
+| $$$$$$$/|  $$$$$$/|  $$$$$$$|  $$$$$$$
+|_______/  \______/  \_______/ \____  $$
+                               /$$  | $$
+                              |  $$$$$$/
+                               \______/ 
+*/
+
+body{
+    padding: 0;
+    margin: 0;
+    background:grey;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/*
+ /$$      /$$           /$$          
+| $$$    /$$$          |__/          
+| $$$$  /$$$$  /$$$$$$  /$$ /$$$$$$$ 
+| $$ $$/$$ $$ |____  $$| $$| $$__  $$
+| $$  $$$| $$  /$$$$$$$| $$| $$  \ $$
+| $$\  $ | $$ /$$__  $$| $$| $$  | $$
+| $$ \/  | $$|  $$$$$$$| $$| $$  | $$
+|__/     |__/ \_______/|__/|__/  |__/
+*/
+
+main {
+    overflow-x: hidden;
+}
+
+/*
+ /$$$$$$                        /$$     /$$                    
+/$$__  $$                      | $$    |__/                    
+| $$  \__/  /$$$$$$   /$$$$$$$ /$$$$$$   /$$  /$$$$$$  /$$$$$$$ 
+|  $$$$$$  /$$__  $$ /$$_____/|_  $$_/  | $$ /$$__  $$| $$__  $$
+\____  $$| $$$$$$$$| $$        | $$    | $$| $$  \ $$| $$  \ $$
+/$$  \ $$| $$_____/| $$        | $$ /$$| $$| $$  | $$| $$  | $$
+|  $$$$$$/|  $$$$$$$|  $$$$$$$  |  $$$$/| $$|  $$$$$$/| $$  | $$
+\______/  \_______/ \_______/   \___/  |__/ \______/ |__/  |__/
+*/
+
+section#resultat {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+section#resultat > div.row{
+    width: 300px;
+    margin: 2em;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16), 0 2px 15px 0 rgba(0,0,0,0.12);
+    transition: transform .2s ease-in-out;
+}
+
+section#resultat > div.row > div.img {
+    width: 100%;
+    height: 375px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section#resultat > div.row > div.content { 
+    box-sizing: border-box;
+    padding: 8px;
+    height: 64px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    font-size: 14px;
+}
