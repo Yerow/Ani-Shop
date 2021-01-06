@@ -63,6 +63,8 @@ body{
     background: rgb(29,28,28);
     background: linear-gradient(90deg, rgba(29,28,28,1) 0%, rgba(107,104,101,1) 100%);
     font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    position: relative;
 }
 
 /*
@@ -78,6 +80,10 @@ body{
 
 main {
     overflow-x: hidden;
+}
+
+h2{
+    color: white;
 }
 
 /*
@@ -111,7 +117,7 @@ section#resultat > div.card:hover {
     transform: scale(1.1);
 }
 
-section#resultat > div.card > div.img {
+section#resultat > div.card  div.img {
     width: 100%;
     height: 375px;
     border-top-left-radius: 10px;
@@ -121,7 +127,7 @@ section#resultat > div.card > div.img {
     background-position: center;
 }
 
-section#resultat > div.card > div.content {
+section#resultat > div.card  div.content {
     box-sizing: border-box;
     padding: 8px;
     height: 64px;
@@ -131,7 +137,7 @@ section#resultat > div.card > div.content {
     font-size: 14px;
 }
 
-section#resultat > div.card > div.price {
+section#resultat > div.card  div.price {
     padding: 4px;
     text-align: right;
     font-size: 120%;
@@ -161,9 +167,18 @@ footer {
     font-size:2.4vh;
     background-color:rgb(19, 19, 31);
     color:white;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
 }
 
-a{
+footer > div > a{
     text-decoration: none;
     color:white;
+}
+
+section#resultat > div.card > a{
+    text-decoration: none;
+    color:black;
 }
