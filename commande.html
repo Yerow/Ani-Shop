@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/commande.css" class="css">
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img src="./assets/Logo anishop.png"></a>
+        <div>
+            <input type="search" placeholder="Recherche">
+            <a href="./recherche.html"><img src="./assets/loupe.png" id="loupe"></a>
+            <a href="./commande.html"><img src="./assets/cart.png"></a>
+        </div>
+    </header>
+    <main>
+        <h1>Recapitulatif de la commande</h1>
+        <div class="cell">
+            <img src="./assets/Fig Zoro.jpg">
+            <p>
+                <strong>Personnage : </strong> Roronoa Zoro<br>
+                <stong>One piece</stong><br>
+                <strong><span>Prix : 459.99</span></strong>
+                <br>
+            </p>
+        </div>
+        <div class="cell">
+            <img src="./assets/Zenitsu.jpg">
+            <p>
+                <strong>Personnage : </strong> Zenitsu Agatsuma<br>
+                <stong>Demon slayer : Kimetsu no Yaiba</stong><br>
+                <strong><span>Prix : 23.99</span></strong>
+                <br>
+            </p>
+        </div>
+        <div class="total">Total : 483.98</div>
+        <section class="info">
+            <h1>Informations de livraison</h1>
+            <form action="/api/achat.php" method="get">
+                <div class="coord">
+                    <div>
+                        <label>Nom :</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Prénom :</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Numéro de téléphone :</label>
+                        <input type="text">
+                    </div>
+                </div>
+    
+                <div class="coord">
+                    <div>
+                        <label>Adresse :</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Code Postal :</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Ville :</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Pays :</label>
+                        <input type="text">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div>Contactez-nous</div>
+        <div><a href="QSN.html">Qui sommes-nous ?</a></div>
+        <div>CGU/CGV</div>
+    </footer>
+
+</body>
+
+</html>
